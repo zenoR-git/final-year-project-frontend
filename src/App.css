@@ -1,0 +1,75 @@
+#root {
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+  margin: 30px;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  color:azure;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.buttonSec{
+  grid-column: 2 / span 1;
+  grid-row:1;
+  display: flex;
+  place-items: center;
+}
+.container {
+  display:grid;
+  justify-content: center;
+  width: 100%;
+  align-content: space-evenly;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.typeSec{
+  grid-column: 1 /span 1;
+  grid-row: 1;
+}
+
+textarea {
+margin-left: 40px;
+margin-right: 40px;
+}
+
+
+.listOfComments{
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.comment{
+  border-color: blueviolet;
+  border-width: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 5px;
+  margin: 5px;
+}
